@@ -1,7 +1,7 @@
 import openai
 
-# Your OpenAI API key
-openai.api_key = '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'
+with open('OpenAI_API_Key.txt', 'r') as file:
+    openai_api_key = file.read().strip()
 
 def summarize_text(text):
     """Use GPT-3.5 to summarize a line to a maximum of 20 words."""
