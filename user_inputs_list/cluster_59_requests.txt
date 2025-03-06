@@ -1,0 +1,46 @@
+Tables are still not functioning; perhaps placing each table in its own .md folder will resolve the issue.
+Accepted for MSA program, not MSBA.
+Attempting to access shared drive at work, instructed to sign out and back in, encountered errors with global variable and profile list.
+Error loading profile.ps1 file due to disabled script running. For more info, visit https:/go.microsoft.com/fwlink/?LinkID=135170.
+Before checking website, closed SQL server configuration management, assuming it only ran local server, not cloud server.
+A connection pool to MSSQL is created, logging "Connected to MSSQL" upon successful connection or "Database connection failed" on error.
+Database connection failed while trying to log in, resulting in a TypeError due to undefined properties being read.
+Instant login failure may still result in a timeout error, despite not appearing to be trying to login for long.
+Database connection failed to connect to connorweisburg-sqlserver.database.windows.net:1433 due to a timeout error.
+Use script to test database connection on Vercel, deploy endpoint to log errors and specific error codes for connectivity testing.
+Database error: TypeError on /users endpoint, connection lost due to ECONNRESET, server connection issue with Vercel serverless system.
+Attempted 4000 thing failed, tried curl, database connection failed in command prompt.
+Ensure SQL server allows remote connections by checking configuration in SQL manager, as it may not be visible by default.
+Consider stopping SQL Server Browser and SQL Server Agent services under SQL Server services for specific scenarios or troubleshooting needs.
+Cannot connect to server LAPTOP-K05VTBPA\SQLEXPRESS due to SSL certificate chain issued by untrusted authority. Error -2146893019.
+Database query failed despite appearance of looking good.
+Login failed for 'your_db_user' due to a ConnectionError at G:\arbory\node_modules\mssql\lib\tedious\connection-pool.js:85:17.
+Decide if the login name should be a SQL server authentication when entering it into the security logins.
+Database query failed, still trying to resolve the issue.
+Test SQL Server connection in Management Studio with credentials WEISGUY and Hello555 by running SELECT * FROM Users query.
+Connection to localhost failed for user 'WEISGUY'. Error 18456. For help, visit https://docs.microsoft.com/sql/relational-databases/errors-events/mssqlserver-18456-database-engine-error.
+Password length in login properties differs from original password length.
+Logged in as WEISGUY to SQL server, unable to find Users table under userBubbles in Tables.
+The users table is in a dbo schema, but it should not be.
+Error message 229: SELECT permission denied on 'Users' in 'userBubbles' database schema 'dbo'. Completion time: 2024-09-27T13:59:07.2586427-07:00.
+Uncertain if admin account exists, only have WEISGUY and Windows authentication.
+SQL server instance set up but unsure how to access admin account.
+The dbo.Users object is visible in the object explorer for WEISGUY.
+Error message indicates data truncation in the 'password' column of the 'Users' table in the 'userBubbles' database.
+Error message indicating foreign key references invalid table 'dbo.Users', preventing creation of constraint or index.
+Blank values appeared under certain columns when searching for the users table, even though it is visible and accessible.
+Default initialized tables in master database, not userBubbles -> Tables -> Users in Databases->System Databases.
+Request for code to print Users table from server to verify correct server connection.
+Error message indicating no connection specified for the request, occurring in mssql module while querying, resulting in code 'ENOCONN'.
+Cannot connect to connorweisburg-sqlserver.database.windows.net. Cannot open server "gmail.com". Login failed. Error 40532. Click for help.
+Cannot connect to connorweisburg-sqlserver.database.windows.net, error 40532. Login failed for server "gmail.com". Click for help.
+Syntax errors near 'ON' and 'with' in SQL Server, login failed for user '##MS_InstanceCertificate##', ALTER DATABASE statement failed.
+Server running at http://localhost:3000, but database connection failed due to encryption requirement. Set 'encrypt' config option to true.
+Configuration object with user, password, server, database, and options for database connection using environment variables and specific settings.
+Difficulty connecting to database due to login error.
+Username options: CloudSA64589c75, connorweisburg_gmail.com#EXT#@connorweisburggmail.onmicrosoft.com. Choose one, both, or neither for authentication.
+Database connection failed due to login error for user 'CloudSA64589c75' in MSSQL, causing ELOGIN code. Connection issue at connection-pool.js line 85.
+Unable to locate password change option.
+User encounters 404 error when trying to log in or register on site, suspects database connection issue.
+Trouble connecting to cloud SQL after deploying through Vercel, login and registration features not working as expected.
+Database connection to connorweisburg-sqlserver.database.windows.net:1433 failed with ECONNRESET error at /var/task/node_modules/mssql/lib/tedious/connection-pool.js:85:17.

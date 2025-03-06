@@ -1,0 +1,28 @@
+Need to build site with different rendering based on device (iOS, Android, mobile). Requesting help to understand implementation process.
+How to view mobile site version while running local development environment in WSL on VS code.
+Using desktop with mobile on, but considering trying direct phone connection. Currently not a priority.
+Edit to differentiate between ios and android in the same way.
+Imports fonts, metadata, and components, sets page title and description, renders OpenMic logo and content using React and PostHogPageView.
+The code sets platform variable based on user device, showing relevant bubble for iOS or Android, both for desktop.
+Function Home sets platform variable based on user-agent, defaulting to desktop, then uses it for further processing.
+Center the App Store button on the page if the platform is iOS.
+Conditional rendering based on platform; overhaul to screen size-based rendering, keep device-specific button rendering. Update ios and android for small vertical screens.
+Change current conditional based on platform to one based on screen height and width instead of desktop platform.
+Default platform is desktop, but changes to android or iOS based on user-agent. Page includes title, icon, and background image.
+This code imports useState and useEffect from React, sets state for screen size, updates on resize, and conditionally renders content.
+Want to keep as server component but need conditional based on screen size. Is there a solution for this issue?
+{/* Conditional rendering based on platform */}
+{desktop && (
+The code exports a function for the Home component with conditional rendering based on the platform (desktop, iOS, or Android).
+Text content for iOS promoting OpenMic app with a call to action to find musical collaborators and download the app on iOS.
+On small screens, this code displays a message inviting users to find musical collaborators on OpenMic through an iOS app.
+Display App Store and Google Play buttons for desktop platform in addition to ios and android platforms respectively.
+Pixel dimensions vary among iPhone and Android models, requiring specific research for accurate information on each device's display resolution.
+Instagram users cannot see who viewed their profile, as the platform does not provide this information to users.
+A splash screen is a graphical introduction displayed when a software program is loading to enhance user experience.
+Concerns about attention war with apps like TikTok, Facebook, Instagram, brainrot, doom scrolling, excessive screen time, Brave New World, 1984.
+My laptop is a Chromebook, just so you know.
+Don't have apps on phone, but get sucked into browser versions.
+Leechblock is a browser extension that helps users limit their time spent on certain websites to increase productivity.
+Inquire about adding LeechBlock to Safari on iPhone for improved productivity and reduced distractions while browsing.
+Screen time block easily bypassed, button shows when blocked. Need Safari for productivity, doesn't make sense to block overall.

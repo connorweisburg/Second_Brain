@@ -1,0 +1,24 @@
+Slide 3: Key Object
+Is the text or element positioned directly in the center of the image?
+Issue with elements sharing parent container, causing malfunction.
+Reformatting code to move text content inside conditional rendering based on platform for better organization and structure.
+This is a JSX element with a class name of "pl-6" for styling purposes in React.
+Using the "hidden" property keeps the element on the page, but it is not visible to the user.
+CSS is a coding language used for styling and formatting websites, controlling the layout and appearance of web pages.
+Question asking for the definition or explanation of HTML, a markup language used for creating websites and web applications.
+Seek beginner-friendly resources like online tutorials, coding platforms, or courses to practice and familiarize yourself with HTML coding.
+Will the new HTML replace or add to the previously copied content?
+Requesting assistance to dissect and comprehend new HTML code in order to improve understanding and proficiency in the language.
+Determine the appropriate placement of the HTML line within the existing code structure.
+HTML code with doctype declaration, meta tags, title, stylesheet link, button, div container, and script source.
+Div group element with various attributes and properties, including class, style, and innerHTML content of "ad".
+Console log displays attributes and properties of a div element, including class, style, and content details like innerHTML.
+Position group elements accurately in DOM for accurate detection by elementFromPoint.
+Let's handle mouse position in programming.
+"How do I find the cursor's position?"
+Is z-position related to default element layer position? Will element default to closest layer?
+The DOM is the Document Object Model, a programming interface for web documents that allows manipulation and interaction.
+How can I view the changing DOM structure of the website?
+Questioning the appropriate location for inserting HTML code.
+Data for the DOM structure is stored in memory when running the HTML file.
+Please provide information on when an element is switched off in addition to being closer to completion.

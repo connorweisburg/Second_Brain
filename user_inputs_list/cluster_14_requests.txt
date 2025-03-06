@@ -1,0 +1,40 @@
+Unable to convert PDF to MD without losing information, unsure if flowchart structure in PDF is sufficient for conversion.
+Extract headings and paragraphs from a .docx file, save them in Markdown format, and avoid creating multiple folders for output.
+Questioning code behavior, seeking assistance to access tables correctly in docx library to ensure tables are placed in correct sections.
+If paragraph is empty and contains tables, store table data in Markdown format but block is never entered.
+Tables object in docx does not include place within document, making it difficult to work with.
+Inquire further about docxtpl for potential usefulness.
+Integrate given info into one block: docx_file = r"L:\IV. Emergency Operations Plans (EOP)\Continuity Of Operations Plans (COOP)\2023-2024\BUS\2022 Bus Ops  COOP_DRAFT.docx" output_dir = r"C:\Bus
+Error in Python script "docx_to_sectioned_md.py" due to 'NoneType' object having no attribute 'element' in document processing.
+Error message showing FileNotFoundError for 'Plan_Maintenance/Review.md' file in Python script 'docx_to_sectioned_md.py' at line 49.
+Python script to extract sections from a Word document, convert tables to Markdown, and save each section as a file.
+Error in file docx_to_sectioned_md.py at line 63: TypeError - cannot concatenate str with NoneType.
+Python script to extract sections and tables from a Word document, convert to Markdown, and save in specified output folder.
+Error in the Python script "docx_to_sectioned_md.py" due to an UnboundLocalError with the variable 'current_subsection'.
+Identifying issues, plan to combine header 1 and header 2 sections into one .md file for simplicity and consistency.
+Tables should be in one .md file, not in separate sections. You did it incorrectly.
+Some sections have both paragraphs and tables, so remember that you are mistaken.
+Structured document with defined sections, table of contents. Convert to separate .md files, possibly sorted by subfolders for organization.
+I do not have the module docx.
+Error: File not found in the specified directory for the Python script docx_to_sectioned_md.py.
+Converted documents to MD files, helpful but considering vector search implementation for faster processing, not done yet.
+a solution is needed to fix the issue of the table being split between two pages in the Word document.
+Add a folder with text files, PDFs, or Markdown to this situation to utilize markdown formatting for the content.
+Automating file organization, considering benefits of converting word docs to .md over .txt for efficiency and formatting preservation.
+Questioning if converting a PDF to .md will retain heading info or if it's better to convert PDFs to .txt.
+Convert drive to .md, create local folder with same structure. Write python script to create folder structure, no file manipulation.
+Python script converting .docx files to .md files, skipping .pdf files due to invalid input format requirements.
+Convert text into .md file format by extracting relevant information.
+Function to extract text from a PDF's first page and save it as a CSV file, encountering errors with fitz and csv.
+Python code uses PyMuPDF to extract text from the first page of a PDF and save it as a CSV file.
+Requesting a program to extract data from the first page of a PDF document and convert it into a CSV file.
+Yes, you can find and replace commas with a new line in Word by using the find and replace function.
+Create a checklist in Microsoft Word by using bullet points or checkboxes to organize tasks or items in a list.
+How can I replicate a desired content control format consistently throughout the entire document?
+Creating dependencies for tables in Word allows for automatic updates of matching tables in different documents when changes are made.
+Looking to start a new page in Microsoft Word without manually adding blank lines due to edits above the paragraph.
+Pages are intentionally left blank in documents to maintain formatting, prevent confusion, or allow for future revisions or additions.
+One similar item is located at the end of a document.
+Requesting a concise summary of the various appendices included in the PDF document.
+No, Google Docs does not have a built-in feature to create columns within a text box.
+A financial report is a document that provides information on an organization's financial performance and position.

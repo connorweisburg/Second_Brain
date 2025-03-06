@@ -1,0 +1,71 @@
+Struggling to identify a key sound in German house music, despite feeling confident in overall arrangement skills.
+I need to experiment with using it for chord stabs, as I currently only use it for lead melodies.
+MP3s generally have worse quality than WAV files due to compression, resulting in loss of audio data and fidelity.
+Attempting to isolate vocals using an au stem splitter, but must pay for the wav file to proceed.
+Demo is low quality with bare bones and sloppiness. Is expecting a finished track normal?
+Name for scratchy sound made by hand sliding up and down acoustic guitar fretboard.
+Looking for a quicker method for cross fading in audio editing due to current process being time-consuming and inconvenient.
+Main content container with heading "Open Mic" and description "where musicians find each other", includes email submission form and link to learn more.
+Is there a problem switching from monophonic to x form after editing has been completed?
+Freezing process causes glitches in audio, impacting quality with wacked artifacts.
+Inquiring about the presence of a sampler in Pro Tools software for music production.
+Inquiring about the presence of a sampler in ProTools software for music production.
+I intended to record a fresh version.
+To record bass, create a new audio track or use an aux input.
+Individual unsure how to use DJ deck, unsure how to transfer recorded tracks, questioning whether to use stems or unmixed tracks.
+Is a DJ deck necessary to experiment with that?
+Horn off reduces treble, full range includes all frequencies.
+Duplicate plugin to multiple channels for consistent sound throughout the mix.
+Questioning the inconsistency of pitch drift in Melodyne and the difficulty in correcting it effectively.
+Does duplicating the track preserve the original audio or permanently change it?
+Find the frequency range where the nasal quality is most pronounced to identify and adjust accordingly in the equalizer.
+Unique production style with horns, drum samples, and a standout synth melody, but lacking in bass tone quality.
+Desiring a bass amp to preamp signal for better sound quality, using a focusrite with a digital amp as a substitute.
+Charlie Puth uses Logic Pro X for his music production.
+Is audio conversion quality consistent across interfaces, or is there a noticeable difference between low-cost and high-cost converters?
+I have a DAW, acoustic treatment, and better mics than suggested. Let me add a few more things to help.
+Expected range for RMSE?
+Where were the Lumineers' records mixed?
+Inquiring about Cyclops Audio PM 1000 mic preamp, seeking information or feedback on its performance and features.
+Apologizing for confusion, intended to inquire about comping tracks.
+Compiling guitar takes with di and processed signals, need to maintain two tracks for final comp without playlisting.
+Trying to understand processes set up by initial engineer, issue with soloing tracks causing kick and snare to still play.
+Converting identical stereo audio to mono does not lose information as both channels are identical.
+Audio files with a 48000 Hz sample rate may split samples in two for stereo, with each channel having 24000 Hz samples.
+Inquiring about the microphone model used by Patti Smith.
+Tilting a microphone off axis alters sound; remember this to control audio quality during recordings or performances.
+Seeking tips/exercises to improve transitioning between head voice and falsetto while practicing singing more frequently.
+Seeking mic techniques for recording guitar with SM57s, Beta 52a, and condenser mics to improve sound quality on Blues Jr. amp.
+Inquire about familiarity with the iconic fuzz sound.
+How does cone angle impact tone for a guitar placed 57 degrees?
+Location of aéroplane over the sea's mixing and mastering is unknown.
+Did they record at home?
+Were the audio recordings professionally mixed and mastered by someone other than the original creators of the content?
+Tame Impala recorded their first records by using a laptop and a microphone in a small bedroom studio.
+Inquiry about Cubase, a digital audio workstation software used for recording, editing, and producing music.
+Was the recording made by him?
+Inquire about the microphone used to record vocals for the song.
+The SM7 and SM7b have minor differences in design and sound quality, but overall serve similar purposes in recording.
+Questioning the potential of recording a number one hit with the given equipment due to uncertain quality standards.
+Do you know the recording location or method used?
+Did he get his music professionally mixed and mastered despite recording at home?
+Is mica typically found in roadbase materials?
+Process for mastering jazz recordings involves enhancing audio quality, balancing levels, and ensuring consistency across tracks for polished final product.
+Questions about recording techniques used for the Beatles' white album, including overdubbing, playing together, and instrument isolation.
+Determine compatibility between speakers and mixer before purchasing by researching specifications or consulting manufacturer guidelines.
+It is acceptable for the speaker's max wattage to exceed the mixer's output wattage.
+It is better for the speaker to have higher impedance in order to prevent damage to the mixer.
+A sub kick is a microphone used to capture low-frequency sounds, such as the kick drum, in audio recording.
+Unity gain in music production refers to maintaining the same level of volume throughout the signal chain without any amplification.
+Harmonic analysis idea is promising. Are there any user-friendly plugins available for analyzing chord data currently?
+Looking for software that can analyze music and generate sheet music or chord charts automatically.
+Difference between condenser and dynamic mics in terms of sensitivity, sound quality, power requirements, and durability.
+Methods for incorporating samples into a song, such as looping, chopping, and layering, enhance creativity and add depth to music.
+4 bar loop with 15 elements: 2 kick, 2 snare, 2 hi hat, cowbell, bass, rhythm guitar, 2 lead guitars, lead synth, 2 drones.
+Generate MIDI data for melodies.
+Can you also play drums?
+Requesting a complete arrangement of drums, synths, bass, and strings.
+Progress in AI is advancing towards replicating audio engineering mixing and mastering processes, but still has limitations in accuracy.
+Inquire about special processing techniques used in mixing audio to enhance or manipulate the sound quality of a track.
+Spacial processing in a mix involves manipulating the stereo image, depth, and placement of sound elements for a balanced mix.
+Professional recordings released by band were not good and may have hurt image. Consider taking them down for improvement.

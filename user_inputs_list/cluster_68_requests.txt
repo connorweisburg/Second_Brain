@@ -1,0 +1,38 @@
+Only need first page, but not all info was retrieved from it.
+Can you manage 20 pages? Just read the first page of each.
+To change a link in SharePoint, edit the page or document containing the link and update the URL as needed.
+Using Word, you can edit a document and easily add hyperlinks in the table of contents for quick navigation.
+In Word, can I change the hyperlink functionality in the table of contents from 'ctr + click' to just 'click'?
+Contracted to work on a landing page. Requesting a rundown. Code includes font imports, page title, email form, and link.
+Two pages: page 1 with text and links, page 2 with image and link. Desktop: side by side, mobile: slide.
+Footer with social links, terms of service, privacy policy, copyright, and location information to be placed at the bottom.
+SocialFooter.tsx file contains code for displaying social media icons with links. Issue is with icons not displaying properly.
+The code snippet defines an AboutPage component with sections for OpenMic, criteria, and team members, including Claire and Henry.
+Server restart fixed issue, but logo overlaps footer, preventing links from being clicked. Issue remains unresolved.
+Link to about page with styled div containing text "Learn more" with hover effect and underline transition.
+Link tag used for internal navigation, while href used for external links in HTML code for website structure.
+Footer with social media links, terms of service, and copyright information is not displaying correctly when copied over to another version.
+The referenced URL is not appearing as expected, causing confusion and uncertainty about its visibility on the webpage.
+Footer with About Us link and social icons, positioned at the bottom left of the page.
+Footer with Terms of Service and Privacy Policy links, left justified. Class names: z-10, absolute, bottom-0, flex, items-center, text-center.
+No longer need the social footer.
+A fixed footer with links to Terms of Service and Privacy Policy, styled with flexbox and centered on the page.
+Footer with links to Terms of Service and Privacy Policy, cut off on the left side, pretty good now.
+Combined footer with terms of service and privacy policy links on the left, socials and about centered, with improved formatting.
+The "about us" and social media links are now positioned far to the right on the webpage.
+This line creates a hyperlink to an app store link that opens in a new tab.
+Footer with terms of service, privacy policy, about us, and social links. Mobile version to have about and social links at top right.
+There is an issue with both desktop and mobile versions in the footer block; consider separating into two blocks for clarity.
+Mobile footer with About Us and Social Links at top right, centered image at bottom, for iOS and Android platforms.
+Mobile footer for iOS and Android displays About Us, social links, and image, but the bottom section is unreachable.
+Mobile footer with About Us and Social Links on top right, centered image on bottom section, issue with alignment.
+Move terms of service, about us, social links, and privacy policy to the top of the screen as a header on mobile.
+Footer with links to Terms of Service, Privacy Policy, About Us, and Social Footer, positioned at the bottom of a container.
+The text is different sizes to create visual hierarchy and emphasize important information in the footer section.
+Feedback on mobile version: footer became header, 2-phones image moved. Still want those functions.
+Friendster was an early social networking website that allowed users to connect with friends and share personal information online.
+Inquire about adding a function call to the right-click menu.
+A login screen must be a separate HTML file from the main page.
+Confirming if a right click is needed.
+Easily redirect Adobe Portfolio website to Linktree to avoid broken links and maintain online presence.
+Cutting out 'doom-scrolling' on social media is challenging due to the addictive nature of Instagram and YouTube.

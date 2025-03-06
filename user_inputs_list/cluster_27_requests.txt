@@ -1,0 +1,28 @@
+Requesting help to set up a workflow for editing a Github repository that controls an active website using VS Code.
+Git is not yet installed on the computer.
+System set up to automatically publish website when changes pushed to GitHub repository, even though it takes longer than desired.
+Editing small part of OPENMIC repo, ran npm on entire repo. Should have navigated to landing page folder before npm install.
+Git deployment not needed now, issue persists locally.
+Request to push landing page to GitHub on new branch, seeking assistance.
+To determine current branch, use "git branch" command in terminal to display all branches with current one highlighted.
+View git push history with "git log --graph --decorate --oneline --all" command to see all commits and branches pushed.
+Add changes to git repository by staging files with 'git add', committing with 'git commit', and pushing to remote repository.
+Git push successful with 13 objects enumerated, compressed, and written to remote repository. Resolved deltas and updated branch successfully.
+Individual will attempt to push to GitHub and is seeking guidance on the process.
+Error message indicating that the push was rejected due to remote work not present locally, suggesting using 'git pull' before pushing.
+To start writing a GitHub repository, create a new repository on GitHub and clone it to your local machine.
+Packages installed in project directory may or may not be uploaded to Github, depending on project configuration and version control settings.
+Pushing from GitHub to Vercel ensures that all packages and necessary info from the .gitignore file will still function.
+Create a .gitignore file by manually creating a new file and naming it .gitignore in your project directory.
+Error message indicating that the command 'git' is not recognized or not properly installed on the system.
+Inquire about the next steps for git commands.
+Git warns that LF will be replaced by CRLF in 'package-lock.json' and 'package.json' next time Git touches them.
+Error pushing to GitHub because master branch does not exist. Make sure to create and push a branch to match.
+Error occurred while pushing changes to remote repository 'https://github.com/connorweisburg/Arboratory.git'.refs could not be pushed.
+Connect godaddy domain to github files on vercel for website hosting. Instructions needed for linking vercel to godaddy domain.
+Asking for help with pushing changes to GitHub after modifying app.js in a project.
+Requesting guidance on pushing changes to vercel.json and app.js files to GitHub. Confirming correctness of previous actions.
+After uploading to GitHub, the process of copying to Vercel typically takes a short amount of time.
+Github has correct files, but Vercel does not after a few minutes.
+Source code on Vercel is outdated, not reflecting the latest push. Is there a delay in updating the source code?
+Creating a GitHub repository to integrate with Vercel. Need guidance on how to begin the process.

@@ -1,0 +1,37 @@
+Cost estimate for processing a 100,000 character document using your api key.
+Can it handle with 128k context length?
+Questioning if numerous documents can be uploaded and stored in memory.
+Documents exceed 100,000 characters.
+Automatically mount files in a folder to Google Drive without signing in every time.
+Need to compress a 110Mb gif to under 1Mb for email. Seeking suggestions on how to effectively reduce file size.
+Larger file directory with 50.1 MB size, all files in .md format.
+Considering using OpenAI for company file directory, wondering if access will remain free and if employees can discuss files.
+Upgrading to 3B version may improve handling of large documents, as the current version only generates basic requests.
+I want to ensure no harm to files or drive during important drive; just reading, no changes to files or drive.
+Python script that replicates folder structure from source directory to destination directory, with example usage provided.
+Creating copied folder structure for .md files from original drive to avoid messing with original files and potential trouble.
+Does it follow our folder structure or create its own?
+The code converts supported files in a source directory to Markdown format and copies them to a destination directory.
+Uncertain about testing on important drive after successful test on test folder, feeling nervous about potential consequences.
+Questioning if copying text using the keyboard shortcut "Ctrl+C" is possible.
+Currently working on 354 files, totaling 45553 embeddings.
+Image asset with file size of 220531 bytes, dimensions of 440x2048, and sanitized metadata. No other specific details provided.
+Inquiring about adding files to drive and real-time response. Requesting more information before proceeding.
+Concerned about downloading on work computer due to access limitations; unsure if able to download without proper permissions.
+Inquire about the maximum number of documents that can be analyzed simultaneously.
+Excited to use it, but unsure how to manage link if I make a copy of the source file.
+Excited to test copying entire folder for testing purposes.
+Image asset pointer with file size 160247 bytes, dimensions 761x1033, and sanitized metadata, no specific content generation or container details.
+I've been committing it, but there are weird artifacts in the warping process sometimes.
+Digital artifact appears when committing, not present beforehand.
+Copyleft is a licensing concept that allows the free distribution and modification of software, as long as it remains open-source.
+Transfer code from Codepen to VS Code for further editing or storage.
+Questioning if files should be saved with a specific name.
+Yes, it is acceptable for your project directory to be located on an external drive.
+Acknowledged, I will test the save function.
+Asking about the specific file type of a document or file.
+Concerned about possible damage to external drive. Seeking guidance on how to check for fractures or issues.
+An aif file is a type of audio file format commonly used for high-quality sound recordings and music production.
+Using 'save copy in' in protocols to transfer full session file to new hard drive. Unsure which items to copy.
+Data loss may occur when compressing files using zip.
+A copywriter is a professional who creates written content for advertising, marketing, or promotional purposes to attract and engage audiences.

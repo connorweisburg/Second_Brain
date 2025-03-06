@@ -1,0 +1,39 @@
+Edit bubble generation to create a box with rounded edges around text instead of bubbles.
+Desire for bubbles to appear centrally on screen, not randomly.
+Inquiring about a data structure for grouping bubbles based on belonging.
+The speaker prefers bubbles to be opaque instead of transparent like they are now.
+HTML code with a div element having id="bubble-container" and class="grid-container", styled with position: relative.
+Requesting title centered with bubble starting in the middle. Confirming feasibility.
+Questioning the difference between #bubble-container and .bubble-container in CSS, seeking clarification on potential distinctions between the two selectors.
+Inquiring about the difference between #bubble-container and .bubble-container in coding.
+Consider changing bubble generation method from absolute to relative positioning if current method is not effective.
+Reevaluating bubbles to float freely, not tied to grid. On resize, bubbles slide back to parent instead of using references.
+Requesting looped movement of bubbles to new group location instead of static placement.
+Issue with bubbles on screen, can move them but they don't align in grid groups as expected.
+Uncertain about where bubbles will appear among the group.
+Create bubble groups with random colors, draggable bubbles, editable text, and alignment functions using JavaScript and DOM manipulation.
+Working on fixing bugs: bubbles all called back to same position, want them offset, new bubble should start in respective group.
+This line moves bubbles to a group at a specific position based on their index within the group.
+Fix callBack() to prevent stacked bubbles. Implement flex system for non-overlapping bubbles that wrap into new row at group edge.
+Bubble width approximately 175, height around 50. Problem identified.
+Add margin space at the top where group name is, bubbles now cover it.
+Inquire about the initiation of bubble zindex.
+Apology for not elaborating earlier. I aimed to adjust bubble width. Code sets width and height to 50px in JS function.
+Function to move a bubble to a group at a specific position with customizable bubble width, height, and spacing.
+Bubble container is for positioning bubbles with specific styling, while grid container is for organizing items in a grid layout.
+Bubbles have higher z-index than group, potentially causing issues.
+Function to move bubbles to a group with calculated positions based on group size, bubble size, spacing, and index.
+CSS code for bubbles with absolute positioning, rounded edges, and centered text within grid layout for consistent display.
+Positioning is effective when moving to first group, but issues arise when moving bubble to other groups. Seeking solutions for problem.
+Can bubbles be positioned relative to the grid container?
+Requesting bubbles be positioned relative to the entire container, not just individually.
+Bubble position offset increases with size of group. Further right = more offset.
+Bubbles should not interact with groups or grid, they should be completely free-floating.
+Struggling to fix bubble positioning issue, unsure of solution.
+Grid and groups must be relative for formatting to work. Bubbles should be children of bubble container for correct alignment.
+Bubble container element can have multiple types of children, not limited to just one type of child element.
+Adjust code to make nearest ancestor to bubbles the entire bubble container.
+CSS code defines a bubble style with padding, rounded edges, centering, white text, and input customization. Possible issues with implementation.
+First edit on bubble makes it larger, even with text removal. Desire for bubble to fit text snugly.
+Determine the maximum number of bubbles that can be stored in the server without causing overload.
+Classes are saved in the bubble container. It is unclear if they are being referenced in this line.

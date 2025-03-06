@@ -1,0 +1,34 @@
+Opened HTML, saw blue bubble in top left corner. Can't proceed further.
+Success! Bubbles are moving. Need button for creating bubbles.
+Occasional glitch with dragging, bubble sticks to cursor.
+Replace the previous create bubble function.
+Functions are present but not called when creating a bubble.
+After fixing one issue, bubbles now snap to a different area on the screen when dragged, making them hard to control.
+Grid resizing causes bubbles to snap to incorrect positions when dragged, no longer following cursor. Bug observed in grid behavior.
+Function creates a bubble group with a name and color, adds it to the container, and makes it draggable and editable.
+Attempted fix failed, bubbles stay still despite new ones being made.
+Troubleshooting issue with dragging bubbles. Consider revisiting group initiation and checking if grid positions are saved with flex function.
+This function makes a bubble draggable by calculating offsets and updating its position based on mouse movements.
+The bubbles still overlap when called, indicating a problem with the functionality.
+Bubbles stopped calling back; an error occurred.
+Bubbles stopped returning calls, indicating a problem.
+I will work on other features before addressing this issue on the bubble sheet.
+Request for specific feature: right-click on bubble to delete it. User wants to implement this option in the program.
+Request for specific feature: ability to delete bubbles by right-clicking on them, expressing interest in implementing this functionality.
+Successful action, but menu partially covered by bubble. Request to adjust positioning for menu to appear outside bubble.
+Move menu above bubble for better visibility.
+Function to make a bubble draggable by updating its position and group when dragged and dropped into different groups.
+Redo the makeBubbleDraggable function for bubbleElement completely from the beginning.
+Request to revert to original makebubbledraggable function that altered bubbles group when dropped.
+Function to make a bubble draggable, detecting mouse events for dragging and dropping within specified groups. Issues may be present.
+Avoid using moveBubbleToGroup for this feature as it positions bubbles in an ordered way; instead, allow them to remain where dropped.
+Calculates the offset of mouse click relative to the top-left corner of the bubble element. It helps track mouse position.
+Add event listener to track mouse movement and update position of bubble element when dragging with offsetX and offsetY.
+Functions to move, edit, and make bubbles draggable on a web page, with console log output showing bubble positions.
+Bubble position shifts slightly when dragged, affected by scroll position. Minor bug, consistent with scroll position.
+Possible issue: text is an attribute of a textspan, a child of the bubble.
+Add class 'bubble-text' to textSpan element to style text as a bubble; setting textSpan.bubble-text = "Click to Edit" is incorrect.
+The code creates a custom context menu to delete a bubble, but it may not work due to potential bugs.
+Uncertain about weirdness, suggest going back a step and creating a delete bubble function.
+Restart from scratch to create a context menu that appears when a user right-clicks on a bubble to delete it.
+This code selects all elements with class 'bubble' and adds a context menu event listener to show a context menu on right-click.

@@ -1,0 +1,66 @@
+Not ready to use result, just testing diagram processing ability. Not quite there yet, but it's okay.
+There are 100 ones in the sequence.
+Is there a more suitable library for this task?
+Questioning functionality of the table tag; uncertain if it is functioning properly.
+Comparison of quantitative data between f16 and q4_0.
+Utilizing deepseek-r1-distill-qwen-1.5B for data analysis and information retrieval.
+Condense CSV data by generating a list of names associated with unique position titles, excluding phone numbers.
+Iterate pdf_scanner through files with similar names but different numbers and dates to compile into one Excel file.
+Excel file not necessary, csv format is acceptable.
+I believe it worked, just displayed oddly in Excel.
+Excel file with file name and content columns, wanting to process data within content column in Excel.
+Remove unnecessary info from each cell, including long headers, and focus on essential details such as incident name, date, activation levels, and orders.
+Unable to remove first 10 lines of text from each cell in Excel.
+Can I use the entire range B2:B33 for this task?
+The necessary data starts after "GENERAL INFORMATION" on the first page.
+Questioning if cell data can be converted to a function, as line breaks did not display properly when attempting conversion.
+Convert two-dimensional table of cells with titles, phone numbers, and names to one-dimensional rows to remove duplicates.
+Multiple columns have different properties, some containing the title "Public Information Officer" followed by different names, while others are mixed.
+Filter function can rearrange items alphabetically or maintain original order, depending on implementation.
+To flatten a 2D table into rows, transpose row by row or convert each row into a list individually.
+Range of cells from A1 to AI27 is specified for use in a spreadsheet or data analysis.
+Can I split text into columns using a 3-character string as the separator?
+Convert two-dimensional table of cells with title, phone number, and name into one-dimensional rows to remove duplicates efficiently.
+Inquire about converting something into a table in Microsoft Word for ease of use and presentation purposes.
+Combine 20 similar pieces of data into one table with multiple names associated with each title. How can data be processed efficiently?
+Referring to the messy original data containing phone numbers and other information.
+Restart process with messy data lists. Remove duplicates, keep unique titles. Remove phone numbers and 'Ph'. Ready to proceed?
+Inquire about adding a checkmark symbol to a table.
+Information is organized and displayed in a table format for easy reference and comparison.
+Linked word tables are used to connect related data in a database, allowing for efficient organization and retrieval of information.
+Considering combining information from appendix B into appendices A and K for better organization and clarity.
+Pivot tables in Excel are interactive tables that summarize and analyze large amounts of data for easy interpretation.
+Prepare to discuss data analytics topics like collection, processing, storage, analysis, statistics, discovery, forecasting, decision-making models, Excel including macros and pivot tables.
+Similar to a pivot table in Excel, but not exactly the same.
+Pivot tables are useful for quickly analyzing and summarizing large amounts of data in a customizable and interactive format.
+Which sequence pattern is more effective: AABAABCBB or AABABCBB?
+A quantitative score of 167 and a verbal score of 160 is considered good in standardized testing.
+Consider implementing a comprehensive family tree system for organizing and tracking relatives.
+Set the id column to auto increment in the database table schema to automatically generate unique values for each record.
+Confusion about creating a database and table structure in SQL Manager, questioning if it should be organized differently.
+Table appears in results of code execution but not in object explorer after running codes.
+Create a table UserBubbles with columns id, userId, text, group, and foreign key reference to Users table. Consider using SQL manager.
+Confusion about data structure in server: Users table has ID, username, password; Userbubbles table has ID, userid, text, group info.
+Shortcut for consolidate function in Excel is Alt + D + P.
+Instructions for labeling columns in a dataset.
+Check the dimensions of a dataframe by using the shape attribute, which returns the number of rows and columns.
+Check data types in a data frame by using the dtypes attribute or the info() method.
+Dictionaries in Python are useful for storing key-value pairs and accessing values quickly using keys.
+Use the head() function in Python to display the first n rows of a dataframe.
+Data split into trainset and testset with 30% for testing, random_state set to ensure reproducibility of results.
+Rank of Dia on biggest airports is questioned.
+Inquire about the metrics_score function.
+To access information from a decision tree model, use methods like feature_importances_ or tree_.decision_path() in Python.
+Creating a histogram for a variable divided into two categories.
+Data stored in a Python data frame.
+Arrange histogram bars side by side to prevent overlap and improve visibility of data distribution.
+How can I view a data legend?
+Restart histogram creation to add a legend. How to include a legend in a basic histogram?
+Create a function that calculates the percentage of data instead of the count, similar to value_counts() in pandas.
+Seeking assistance to modify data effectively while utilizing method 3.
+Exploratory data analysis involves exploring relationships between variables, while univariate analysis focuses on analyzing one variable at a time.
+Different data structures refer to various ways of organizing and storing data to optimize access and manipulation in programming.
+List of 20 common red items.
+Methods for converting a seven digit number to a three digit number are explored and discussed in this study.
+Summarize: Repeat actions or tasks; replicate behavior.
+Create a structured plan for organizing data in an e-commerce website to efficiently manage products, orders, and customer information.

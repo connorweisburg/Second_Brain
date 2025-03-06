@@ -1,0 +1,39 @@
+Unable to locate where to make a copy.
+FileNotFoundError: No such file or directory found for saving sections in the specified file path.
+Error message: Package not found at specified file location 'L:\IV. Emergency Operations Plans (EOP)\Continuity Of Operations Plans (COOP)\2023-2024\BUS\2022 Bus Ops COOP_DRAFT'.
+Error message: NotADirectoryError due to invalid directory name when trying to create a folder in specified path.
+Folder 'appdata' exists in terminal but not visible in file explorer within username folder, causing confusion and inability to locate.
+Error in replicating folder structure due to system not finding specified path, causing traceback in build_folder.py script. Issue occurred during copying.
+Unable to edit long path names due to restrictions or limitations specified in the system settings.
+Error message: Cannot open file for installation due to directory not found.
+Error message when trying to copy and convert files to markdown format due to incorrect directory name syntax.
+Error occurred while attempting to copy and convert files due to incorrect syntax in the destination folder path.
+It appears to be missing a few PDF files.
+Error occurred while trying to copy and convert files due to incorrect syntax in the file or directory name.
+Requesting app to loop through files in folder alphabetically.
+Syntax error due to invalid escape sequence '\E' in file path causing 'unicodeescape' codec error during decoding.
+The file path appears to be correct, leading to a specific folder containing a situation report for a wind and fire event.
+Unable to retrieve full file path. Seeking direct method for obtaining complete file location.
+Check if filename ends with ".pdf" and starts with "Wind" by adding "and filename.startswith('Wind')" to the condition.
+The search only retrieved footer text from files, not the desired result.
+Unable to upload CSV file for assistance due to lacking full version with attachment capabilities.
+Troubleshooting issue with link changing to copy instead of original in destination document, seeking solution to maintain original link.
+Link to destination file breaks when copying source file, even to new folder. Issue persists regardless of folder location.
+Issue with drive settings causing link to break unexpectedly, even without changes to source. Global setting may be culprit.
+Unable to delete source file due to Word falsely claiming it is open, despite not being open. Strange behavior observed.
+Error occurred while installing spleeter due to missing module 'distutils.msvccompiler'. Installation process failed to generate package metadata.
+Error message indicates that the program is unable to locate the name 'SocialFooter' within the code or file.
+Footer not working after moving from original file to a different file within the same app folder. Access to /components folder unchanged.
+Is the issue related to VS Code incorrectly labeling the PNG file as untracked in the version control system?
+File opens in vs code but does not function on server.
+Previous developer added png directly to app folder since src file lacked public folder setup; worked fine without public folder.
+Registration of WSL distribution failed with error code 0x80370102.
+Configuration save failed to save dual monitor span.
+Location of files with merge conflicts is requested.
+Apology for editing wrong file and causing issues with functionality.
+Inquire about the specific location or folder where my project files are stored.
+The .env file saved in Visual Studio Code was saved as .env.txt instead.
+Error 404: Resource not found with code and ID sfo1::x2dgm-1727726543443-2c5c9808029b.
+Protools error message prevents saving due to translation issue with ARA document archive.
+Error: Singleton array cannot be considered a valid collection due to DatasetAutoFolds object being included.
+The word 'Project' is missing from the Window drop down menu.

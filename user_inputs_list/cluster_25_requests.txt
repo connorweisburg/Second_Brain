@@ -1,0 +1,65 @@
+Requesting an API version for performing tasks in an app by setting up an environment to input data into another system.
+Interacting with user-specific database for reading and writing changes.
+Adding input/output field to website as an API for interaction. Seeking guidance on implementation process.
+Inquiring about using as API service, questioning need to download as model for usage.
+Prometheus collects data on performance metrics, storing them in a time series database accessed through HTTP requests, allowing for customizable analysis and immediate notifications.
+"SSLE stands for Secure Sockets Layer Encryption, a protocol used to secure internet communication by encrypting data transmitted."
+Files containing TypeScript code, typically used in Angular applications for defining components, services, and other modules.
+The code sets up a Next.js page for a music networking site called OpenMic with a title and email submission form.
+Integrate a large Python algorithm into a JavaScript website effectively.
+Collection of objects in a website domain is called a website's sitemap.
+Requesting guidance on using WSL and VS Code with Ubuntu to set up a local server for developing a landing page.
+Next.js is useful for building fast and scalable React applications with server-side rendering, automatic code splitting, and easy deployment.
+Contracted to modify a landing page for a web app using Next.js.
+Next.js can interact with React, providing additional features and capabilities for building web applications.
+An API route is a specific URL endpoint that allows communication between different software systems or applications.
+Questioning past use of React in website development for clarification or potential reuse in future projects.
+Do you recall if we utilized React for my last website development project?
+Initialize server with Express, session, SQL, path, bcrypt, JWT, cookie-parser middleware, serving static files, SQL config, JWT secret, connection pool.
+Redis is a service that requires signup and is used for data storage and manipulation in various applications.
+Deploying site with Redis stores user session data on their own computer, enhancing performance and reducing server load.
+Express server setup with middleware for handling data, serving static files, SQL Server configuration, JWT secret key, session setup, user authentication.
+The code sets up an Express server with middleware for handling POST data, serving static files, connecting to SQL, and managing sessions.
+Customer database or client list uploaded to website for reference or marketing purposes.
+Need to create a dynamic website.
+Next.js is a React framework for building server-side rendered apps, offering features like automatic code splitting and hot module replacement.
+Yes, you can do both front end and back end development using VS Code as your integrated development environment.
+One HTML file can run the whole website, but it's common to have multiple HTML files for different functions.
+Requesting information on SQL servers, including their functionality, features, and how they can be utilized in various applications.
+Inquire about steps to upload and retrieve data from website to SQL Server Express for website functionality and data management.
+Node.js is a software that connects to servers, used for executing JavaScript code.
+Users can access the server without downloading anything from the website.
+This code sets up an Express server that connects to a SQL database and listens on port 3000 for requests.
+Creating a certificate for a website without a trusted third-party, typically used for testing or internal purposes.
+Express and SQL server configuration for connecting to a database and fetching data in a Node.js application with user login.
+Is additional setup required for users to write private data to the database?
+Secure user login with JWT for session management. Store user credentials securely, such as hashed passwords.
+Get sends data through URL parameters, while post sends data through the request body. Get is for retrieving, post for submitting.
+JSON is a lightweight data interchange format used to store and transmit data in a structured format.
+Confusion about running server from command prompt, wondering if Vercel handles it automatically without active input.
+Question about difference between http and https.
+Currently comfortable with using just http, may implement security later if users demand or site gains traffic. Concerned about certificate for deployment.
+Express, session, SQL, path, bcrypt, JWT setup with middleware, static file serving, SQL Server config, JWT secret key, user registration, login routes.
+This code sets up an Express server with routes for user registration, login, saving and loading data, and serving files.
+Client code is placed in the designated section of the program, typically within the main function or a specific method.
+Async functions allow for asynchronous programming in JavaScript, making it easier to work with promises and perform non-blocking operations.
+A connection pool is a cache of database connections maintained so that they can be reused when needed.
+Implement connection pooling in the code to improve performance and scalability, ensuring efficient handling of database connections for multiple requests.
+Need to securely share username, password, and JWT secret key. Seeking advice on the best method for public sharing.
+Confusion about how site accesses specific SQL server.
+Interested in production but unsure about making code changes? Utilize a local server to test changes before reuploading without interruption.
+The code sets a JWT secret key from an environment variable and creates a connection pool to a MSSQL database.
+Questioning the necessity of performing API routing tasks and wondering about the purpose or reason behind this responsibility.
+Vercel detects no framework, serves static assets, assigns custom domains, and has one file, index.html, with 905 B.
+Difference between localstorage and sessionstorage is the lifespan of data stored, with localstorage being persistent and sessionstorage being temporary.
+Requesting information on the backend storage servers.
+Securing domain for future site publication, considering using Vercel for hosting.
+Inquire about 'LeafNet' and its features or benefits.
+No, you can purchase a website domain like dafna.rocks without paying extra fees for a specific name.
+Vercel does not provide free domain names; they must be purchased separately from a domain registrar.
+Software as a Service (SaaS) is a cloud-based software distribution model in which applications are hosted by a third-party provider.
+Consider website basics when starting a website.
+Shared hosting is a type of web hosting where multiple websites are hosted on the same server.
+A static site is a website that displays the same content to all users without dynamic elements or database interactions.
+Can ClickFunnels be used to create a website for my father's courses?
+Location of servers?

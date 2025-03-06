@@ -1,0 +1,57 @@
+Requester questions token usage in OpenAI platform, suspecting discrepancies in input/output token requests. Responder advises contacting OpenAI support for clarification.
+Understanding the concept better, exploring token optimization is intriguing.
+Can you understand the larger document if I convert it to markdown, or will the flowchart paths confuse an AI?
+Prediction of AI market crash in 10 years due to hype and uncertainty of actual use despite current excitement.
+OpenAI is a promising business model, but the hype around AI integration into daily tasks may be overblown.
+Questioning the potential appearance of a killer app for artificial intelligence and seeking opinions on its possible features.
+AI requires vast amounts of data to function effectively, which is currently difficult to obtain from real-life monitoring or user input.
+The difficulty of training an AI to perform tasks solely for personal use is being questioned.
+Desire for an AI assistant to make appointments and do taxes, but hesitant due to trust in its capabilities.
+Not afraid of coding automations, but unsure if the effort will be worth it in the end.
+Desire for an app that acts as an extension of memory, without rigid time planning, using AI to group and remind.
+Excited about building a project called 'Second Brain,' thinks it would be crazy and wants to make it happen.
+I have saved all our conversations from the past 2 years and could use them to train an AI model.
+Questioning if using AI in music production suggests a need for a powerful processor like the ultra 7, or if it's unnecessary.
+Currently working on project involving training an AI, which is not my usual task.
+Are these the optimal choices for an AI with knowledge of a vast file directory?
+Fine-Tuning requires hosting a local AI model.
+Embeddings are text vectors used for tasks like question answering, semantic search, classification, and clustering, including retrieval augmented generation (RAG).
+Seeking cost-effective, high-quality AI integration for organization using large shared drive; considering data center or API service for efficient training and updating.
+Explanation of MoE architecture in AI context requested.
+How can I break down this document for use in an AI model with a smaller context window?
+Trying to make information easily accessible to an AI model with 8B parameters. Is it possible to get away with?
+Seeking an interactive chatbot for quick data and document planning, not necessarily insights, but efficient retrieval and organization of information.
+Affordable, cloud-based AI for organization documents, accessible to all employees for file inquiries, with regular data updates.
+Organization has cloud-based drive and data center capable of running large AI model for AI assistant, with efficient local file input.
+No need to read files, just want chatbot to know contents. Unsure if AI benefits from heading markers.
+Seeking free open source AI system to track and train on company's large drive. Is this possible?
+Does the AI remember information or need to rescan it when asked a question after being fed new information?
+Chatbots that utilize processing and training techniques are known as AI chatbots or machine learning chatbots.
+Took MIT course in Data Science, familiar with AI tools like ChatGPT, had mentorship with OpenMic founder, used AI tools for music production.
+Developed part of website for open mic, didn't work on AI. Open to incorporating AI in future projects.
+At 23, with experience in various industries, I am intrigued by AI and eager to be part of its impact.
+23-year-old with real-life experience in various industries, passionate about problem-solving through analytics, eager to be part of AI revolution.
+Delaying decision on blog appearance, considering SEO benefits. AI tools like me are transforming SEO strategies, enhancing efficiency and accuracy.
+Questioning the value of business analysts in the age of consumerism and technology advancements, wondering if they will be replaced by AI.
+Recent crackdown on AI-generated writing in professional settings due to increased detection tools. Is it ethical to use AI for writing?
+Mom confused about AI, thinks it's like captchas on her phone.
+Questioning if AI updates memory on interactions, retains conversations, and shares personal info; wondering if new interactions are remembered.
+Computers are intricate and sophisticated machines that require a deep understanding to operate efficiently.
+Batch normalization is a technique used in neural networks to improve training speed and stability by normalizing input data.
+Deep neural networks have initial layers that identify basic features, while subsequent layers detect more complex features.
+Soft max activation function is commonly used in neural networks for classification tasks to output probabilities for multiple classes.
+The main way to introduce nonlinearity in neural networks is by using activation functions in the hidden layers.
+Exploring potential for AI to take over certain tasks in graphic design field.
+Questioning belief in AI replacing jobs due to human bias and skepticism, comparing to chess players' disbelief in AI beating them.
+Questioning the point of pursuing a programming career when AI like you are becoming increasingly intelligent and capable in coding.
+Comparison between AI and humans in terms of abilities, emotions, and intelligence.
+Could AI be created to apply for jobs, interact online as a human, and retain stay-at-home positions?
+Requesting assistance in creating an artificial intelligence system.
+Creating images with artificial intelligence, do you know how to do it?
+Explanation of deep dream technology, a type of artificial intelligence that enhances and generates surreal images through neural networks.
+Requesting permission to experiment with Dall-E, a program that generates images from textual descriptions using AI technology.
+Questioning human intelligence compared to artificial intelligence, pondering if humans possess the same level of intelligence as AI.
+Questioning the potential for AI to surpass humans in performing various tasks and potentially replacing them in the future.
+Friendly AI assistant can respond to messages and provide information on uses of yucca plant fruit.
+Friendly AI assistant requested to respond to message and provide 15.
+Recognition of imperfection humanizes, despite lack of personal experience. Training data provides vast perspectives, making AI's experience unique.

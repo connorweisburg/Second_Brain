@@ -1,0 +1,20 @@
+Questioning if server location affects performance, mentioning Vercel on East Coast and Azure on West Coast. Wondering about correlation.
+Choose between SQL authentication or Microsoft Entrapassword authentication when connecting to the azure server.
+Database connection successful in SQL Management Studio, environment variables and IPs configured correctly, all IPs allowed on Azure.
+Another server is needed in addition to Azure for connection.
+Vercel and Azure not connecting due to network rules; public endpoints and virtual networks may be the solution. Proper authorization required.
+Sensitive info: user, password, database, JWT secret key. Server info may need to be replaced for Azure.
+Confusion about Microsoft SQL server being in the cloud, questioning its actual location and functionality.
+Setting up Azure platform for a project or task.
+Ask for guidance on the next steps after saving your IP address in Microsoft Azure.
+Connect to Azure SQL Database using SSMS or Azure Data Studio with server name, authentication, username, and password. Azure Data Studio is lightweight.
+Microsoft Entra admin allows centralized management of identity and access to Azure SQL Database. Admin name: connorweisburg_gmail.com#EXT#@connorweisburggmail.onmicrosoft.com.
+Access to azure database granted through SSMS, ready for use.
+Setting up new database in Azure is taking more than 5 minutes to complete the query setting process.
+Database in Azure set up correctly. Need help connecting it to the code.
+Server started on port 3000, but now on Azure.
+Using Vercel for deployment, wondering if Azure database can be used.
+Rewrite the poolConfig object to include the necessary Azure SQL Server configuration settings and update the server connection details accordingly.
+I want everything to work smoothly with the azure server and feel at ease with the setup.
+Confusion about whether the new port is for Vercel or Azure connection during migration process.
+App.js is connecting to MSSQL, but should it connect to Azure SQL Database instead. Is there a difference between the two?

@@ -1,0 +1,18 @@
+In GPT4All, does each request from a chat submit the whole conversation?
+GPT4All has an embedding feature, but its effectiveness for long documents is uncertain.
+GPT4ALL uses fixed length embedding, which may not be suitable for the document.
+Default embedder for GPT4ALL is nomic-embed-text-v1.5, as observed.
+Inquiring about the ability to fine-tune the GPT4 model with paid access to the OpenAI API.
+Want to embed documents, possibly for GPT-3.5.
+Struggling with running a local GPT model to read 600 lengthy text documents.
+Using GPT model to analyze documents for organizations, achieving success.
+Using GPT4all, installed model and added a collection to localdocs for use.
+Installed GPT4all on PC, need to train it on large drive with .txt, .pdf, or .md files, may need to create collection.
+Is embedding files into gpt4all time-consuming?
+Installing gpt4all, seeking information on integration with other systems.
+Is the GPT capable of processing data effectively?
+GPT-4 can write and execute code, but it can become complex quickly.
+Forget the previous part, focus on setting up the basic model. Now with GPT-4 installed, what is the next step?
+GPT stands for Generative Pre-trained Transformer.
+Will GPT models replace lawyer or computer science work in the future?
+Predicting the level of integration of GPT chatbot technology in the future.

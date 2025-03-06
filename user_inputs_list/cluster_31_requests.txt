@@ -1,0 +1,36 @@
+Error message in Python traceback indicates a TypeError when trying to concatenate a string and a NoneType in code.
+Error message indicating 'pip' is not recognized as a command, check spelling and path, try again.
+Commands work in py but not python. Possible reasons for this discrepancy should be investigated.
+The speaker is comfortable using Python (py) but questions the necessity of using 'py -m' for a specific task.
+Questioning if 'pip install' can be used instead of 'py -m pip install' for simplicity and efficiency in Python installations.
+No need to install anything separately for shutil, as it is included in the Python standard library by default.
+Error message stating file 'copy_and_covert_to_md.py' cannot be found in specified directory. Python executable unable to open file.
+Error message stating 'pdf_scanner.py' is not recognized as a command, check spelling and path, try again.
+Realization that Python may not be installed despite previous belief. Possible need for installation or troubleshooting.
+Python can be added to the PATH after installation if the option was not available during the initial setup.
+Error message: ModuleNotFoundError - 'fitz' module not found in specified file location, causing import failure in pdf_scanner.py script.
+Check for Python in command prompt by typing "python --version" or "python -V" to display installed version.
+Python not recognized on G: drive causing issue with spleeter. Check path or install Python on G: drive.
+Questioning whether updating Python would solve the issue at hand or if it would not make a difference.
+Python 3.10 is now in "security fixes only" stage until October 2026, with irregular source-only releases and no binary installers.
+Directory listing of Python 3.10.11 files for different platforms with associated signatures and certificates.
+Python3.10 is not recognized as a command, internal or external, meaning it is not installed or properly configured.
+Python version 3.8.10 is installed on the system.
+Ran "py -3.10 --version" in command prompt, outputting "Python 3.10.11". It was successful.
+NumPy module compiled with 1.x may crash in 2.2.1. Modules must be compiled with NumPy 2.0 for compatibility.
+Error message: Unable to find specified file when attempting to install numpy version less than 2 using pip.
+The system cannot find the specified file when trying to install numpy version less than 2 using pip.
+Confirming if installing numpy<2 is the correct choice for this situation.
+Request to check current numpy version.
+Update numpy by running "pip install --upgrade numpy" in the command line to ensure you have the latest version.
+Modules must be compiled with NumPy 2.0 to support both 1.x and 2.x versions of NumPy.
+Modules compiled with NumPy 1.x may crash in NumPy 2.0.0; rebuild with NumPy 2.0 or 'pybind11>=2.12' for compatibility.
+Error message due to incompatible NumPy versions, suggesting rebuilding modules with NumPy 2.0 or downgrading/upgrading affected modules.
+Error message indicating a numpy.dtype size change, suggesting binary incompatibility due to different sizes from C header and PyObject.
+To install a specific version of pandas, specify the version number in the installation command using pip or conda.
+Dependency conflicts in pip due to installed packages not considered. Incompatibility with required versions of pandas and tensorflow for spleeter 2.4.0.
+To check numpy version, use "np.__version__" in Python code or run "pip show numpy" in the command line.
+Confirm correct installation of dependencies by ensuring the right versions are being installed for each dependency.
+Issue with numpy version causing modules to not work, leading to confusion and inability to fix the problem.
+Spleeter is replacing numpy 1.23.5 with 2.2.1 during installation.
+Chocolatey detected non-elevated command shell usage (not cmd/powershell).

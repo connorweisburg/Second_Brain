@@ -1,0 +1,38 @@
+Existing note/task structure with free floating 'thought bubbles' assigned to a group, potential for abstraction beyond current user input.
+Debugging assistance needed for GitHub code. Loading 'bubbles' works but saving is unreliable. Functions provided for loading and saving data.
+User interaction with movable 'bubbles' on website screen desired. Possible to code in HTML for this functionality?
+Desire for writing user-generated text in bubbles.
+After clicking "create bubble," there is no response or prompt.
+Desire for website to not automatically generate a bubble when first loaded for improved user experience.
+Desire to call newbubble function by pressing ctrl + n.
+Function makeBubbleEditable allows a user to click on text to edit it through input field and updates it accordingly.
+Introducing a feature to the website where users can sign in to access their saved bubble sheets.
+Bubble style with padding, rounded edges, absolute position, pointer cursor, centered text, white color, and width constraints.
+Request to update the MakeBubbleDraggable function with new changes.
+Requesting permission to share HTML, JS, and CSS files for review due to issues with draggable function for bubble placement.
+HTML code creating interactive bubbles with groups, allowing creation, deletion, and customization of bubbles within groups.
+Confirming agreement to implement a feature in either the makebubbledraggable function or the main js body.
+Add newBubble element to body of document; consider replacing this line with another action.
+Function makeBubbleEditable replaces textSpan with an input field for editing, and updates the text when Enter key is pressed.
+Requesting guidance on adding a text box to the main screen for entering a username and password to access or create user info.
+Integrate bubble site for user login, customization, and saving DOM structure in SQL server for reinitialization upon next login.
+Only essential data, such as the bubble's group and text, needs to be saved to the server for site reinitialization.
+Code needed to read and write user bubbles, starting with the savebubbles function that transfers bubble info from DOM to server.
+Problem with referencing text in bubble. Need help accessing stored text for better access within the function createBubble().
+The code saves bubble data from the DOM to a SQL database using Node.js and SQL queries.
+Perform the same action using a /userbubbles endpoint to access data from the userbubbles table.
+Requesting a test case to add a bubble with userID "3" to a list.
+Too complex, just have it create a bubble in the table when I run /userbubbles.
+Post request to login endpoint, checks username and password in database, generates JWT token, redirects to '/bubbles' on successful login.
+Request to create a function that displays bubbles linked to user with id="3" called /userbubbles.
+Function createBubble() in index.html creates a bubble with group name and text input, adding it to an existing or new group.
+Upon user login, import all userbubble data from the server.
+Redirect to the '/bubbles' page after logging in.
+This line sends the user's bubbles data in JSON format with the success status to the client.
+I want bubbles sent to index.html but unsure where it occurs.
+Upon logging in, the screen displays text showing success, user ID, and text bubbles with associated user and group.
+Redirect to '/bubbles' if authToken is valid, else redirect to '/login'; wanted to send an array of bubbles.
+Function to save bubble data by sending a POST request to '/saveBubbles' and displaying success or error alerts. Reverse function needed.
+Function loadBubbles fetches bubble data and loads bubbles accordingly, handling success and error cases appropriately. It appears to be functioning correctly.
+The code creates a bubble with editable text. Initially, the text is saved in the DOM differently but changes after editing.
+Function to make bubble text editable by replacing span with input field, disabling dragging while editing, and updating text on blur/Enter.
