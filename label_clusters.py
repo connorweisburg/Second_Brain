@@ -2,7 +2,8 @@ import os
 import openai
 
 # Set your OpenAI API key
-openai.api_key = 'your-api-key-here'
+with open('OpenAI_API_Key.txt', 'r') as file:
+    openai_api_key = file.read().strip()
 
 def label_clusters_with_chatgpt(clusters_folder):
     # Get the parent directory of the clusters folder
@@ -29,7 +30,7 @@ def label_clusters_with_chatgpt(clusters_folder):
             # Call the OpenAI API to generate a label for this cluster
             try:
                 response = openai.Completion.create(
-                    model="gpt-3.5-turbo",
+                    model="gpt-3.5-turbo-0125",
                     prompt=prompt,
                     max_tokens=50,  # Adjust max_tokens if necessary
                     temperature=0.5  # You can adjust the temperature for randomness
