@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clustering Output</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        #output-box {
+            width: 80%;
+            height: 300px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 20px auto;
+            overflow-y: auto; /* Makes it scrollable */
+            background: #f9f9f9;
+            text-align: left;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Clustering Output</h1>
+    <button onclick="runClustering()">Start Clustering</button>
+    <div id="output-box"></div>
+
+    <script>
+        function runClustering() {
+            fetch('/api/run-clustering', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    appendMessage("Clustering started...");
+                    fetchUpdates(); // Start polling for updates
+                })
+                .catch(error => console.error("Error:", error));
+        }
+
+        function fetchUpdates() {
+            fetch('/api/get-logs')
+                .then(response => response.json())
+                .then(data => {
+                    let outputBox = document.getElementById("output-box");
+                    outputBox.innerHTML = ""; // Clear before appending new logs
+                    data.logs.forEach(log => {
+                        appendMessage(log);
+                    });
+                    outputBox.scrollTop = outputBox.scrollHeight; // Auto-scroll to latest
+                })
+                .catch(error => console.error("Error:", error));
+            
+            // Keep polling every 2 seconds
+            setTimeout(fetchUpdates, 2000);
+        }
+
+        function appendMessage(message) {
+            let outputBox = document.getElementById("output-box");
+            let p = document.createElement("p");
+            p.textContent = message;
+            outputBox.appendChild(p);
+        }
+    </script>
+</body>
+</html>
