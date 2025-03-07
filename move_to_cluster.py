@@ -1,10 +1,14 @@
 import os
 
 def separate_clusters_by_request(file_path):
-    """Organizes user inputs into clusters and saves separate files for each cluster."""
+    """Organizes user inputs into clusters and saves separate files for each cluster in a 'clusters' subfolder."""
     
     # Extract folder path from the input file path
     folder_path = os.path.dirname(file_path)
+    
+    # Create a subfolder called 'clusters' if it doesn't exist
+    clusters_folder = os.path.join(folder_path, 'clusters')
+    os.makedirs(clusters_folder, exist_ok=True)
     
     # Read the cluster assignments
     cluster_assignments = {}
@@ -28,9 +32,9 @@ def separate_clusters_by_request(file_path):
             clustered_requests[cluster_label] = []
         clustered_requests[cluster_label].append(user_inputs[idx])
     
-    # Write the separated files for each cluster
+    # Write the separated files for each cluster in the 'clusters' subfolder
     for cluster_label, requests in clustered_requests.items():
-        filename = os.path.join(folder_path, f"cluster_{cluster_label}_requests.txt")
+        filename = os.path.join(clusters_folder, f"cluster_{cluster_label}_requests.txt")
         with open(filename, "w", encoding="utf-8") as f:
             f.write("\n".join(requests))
         
