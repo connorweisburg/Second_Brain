@@ -3,68 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clustering Output</title>
+    <title>Scrolling Text</title>
     <style>
         body {
+            background-color: black;
+            color: white;
             font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
         }
-        #output-box {
-            width: 80%;
-            height: 300px;
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin: 20px auto;
-            overflow-y: auto; /* Makes it scrollable */
-            background: #f9f9f9;
-            text-align: left;
+
+        #scroll-container {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            overflow: hidden;
+            white-space: nowrap;
         }
-        button {
-            padding: 10px;
-            font-size: 16px;
+
+        .scrolling-sentence {
+            position: absolute;
+            font-size: 24px;
+            white-space: nowrap;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* Hidden text measurer */
+        #text-measurer {
+            position: absolute;
+            visibility: hidden;
+            white-space: nowrap;
         }
     </style>
 </head>
 <body>
-    <h1>Clustering Output</h1>
-    <button onclick="runClustering()">Start Clustering</button>
-    <div id="output-box"></div>
+    <div id="scroll-container"></div>
+    <div id="text-measurer"></div> <!-- Hidden element for width measurement -->
 
     <script>
-        function runClustering() {
-            fetch('/api/run-clustering', { method: 'POST' })
-                .then(response => response.json())
-                .then(data => {
-                    appendMessage("Clustering started...");
-                    fetchUpdates(); // Start polling for updates
-                })
-                .catch(error => console.error("Error:", error));
+        let textQueue = [];
+        let fetchInProgress = false;
+        let lastSentenceEnd = 0;
+        const scrollSpeed = 300; // Pixels per second
+        const scrollContainer = document.getElementById("scroll-container");
+        const textMeasurer = document.getElementById("text-measurer");
+
+        function processQueue() {
+            if (textQueue.length > 0) {
+                let nextSentence = textQueue.shift();
+
+                // Measure width in hidden element
+                textMeasurer.textContent = nextSentence;
+                let sentenceWidth = textMeasurer.offsetWidth;
+
+                let sentenceSpan = document.createElement("span");
+                sentenceSpan.textContent = nextSentence;
+                sentenceSpan.classList.add("scrolling-sentence");
+                scrollContainer.appendChild(sentenceSpan);
+
+                let delay = Math.max(lastSentenceEnd - performance.now(), 0);
+                let duration = ((window.innerWidth + sentenceWidth) / scrollSpeed) * 800;
+                
+                lastSentenceEnd = performance.now() + delay + duration;
+
+                // Initial position
+                sentenceSpan.style.left = "100%";
+                sentenceSpan.style.transition = `transform ${duration}ms linear`;
+
+                // Start animation
+                setTimeout(() => {
+                    sentenceSpan.style.transform = `translateX(-${window.innerWidth + sentenceWidth}px)`;
+                }, delay);
+
+                // Remove sentence from DOM after it fully scrolls off
+                setTimeout(() => {
+                    sentenceSpan.remove();
+                    processQueue(); // ✅ Start the next sentence only after this one leaves
+                }, delay + duration);
+            } else {
+                // If queue is empty, check again after 1 second
+                setTimeout(processQueue, 1000);
+            }
+
+            // ✅ Fetch more text only when necessary
+            if (textQueue.length < 3 && !fetchInProgress) {
+                fetchMoreText();
+            }
         }
 
-        function fetchUpdates() {
-            fetch('/api/get-logs')
-                .then(response => response.json())
-                .then(data => {
-                    let outputBox = document.getElementById("output-box");
-                    outputBox.innerHTML = ""; // Clear before appending new logs
-                    data.logs.forEach(log => {
-                        appendMessage(log);
+
+
+        function fetchMoreText() {
+            if (!fetchInProgress) {
+                fetchInProgress = true;
+                fetch('/api/get-text')
+                    .then(response => response.json())
+                    .then(data => {
+                        textQueue.push(...data.output.match(/[^.!?]+[.!?]/g));
+                        fetchInProgress = false;
+                    })
+                    .catch(error => {
+                        console.error("Error fetching text:", error);
+                        fetchInProgress = false;
                     });
-                    outputBox.scrollTop = outputBox.scrollHeight; // Auto-scroll to latest
-                })
-                .catch(error => console.error("Error:", error));
-            
-            // Keep polling every 2 seconds
-            setTimeout(fetchUpdates, 2000);
+            }
         }
 
-        function appendMessage(message) {
-            let outputBox = document.getElementById("output-box");
-            let p = document.createElement("p");
-            p.textContent = message;
-            outputBox.appendChild(p);
-        }
+        fetchMoreText();
+        processQueue();
     </script>
 </body>
 </html>
