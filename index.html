@@ -13,6 +13,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column; /* Adjusted to stack elements vertically */
             height: 100vh;
             margin: 0;
         }
@@ -20,102 +21,169 @@
         #scroll-container {
             position: relative;
             width: 100%;
-            height: 50px;
+            height: 24px;
             overflow: hidden;
             white-space: nowrap;
+            margin-bottom: 20px; /* Added space between scroll and input */
         }
 
         .scrolling-sentence {
             position: absolute;
             font-size: 24px;
             white-space: nowrap;
-            top: 50%;
-            transform: translateY(-50%);
+            top: 0px;
+            line-height: 24px;
         }
 
-        /* Hidden text measurer */
-        #text-measurer {
-            position: absolute;
-            visibility: hidden;
-            white-space: nowrap;
+        .input-container {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .input-container input {
+            padding: 8px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        .input-container button {
+            padding: 8px 16px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        .input-container button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
     <div id="scroll-container"></div>
-    <div id="text-measurer"></div> <!-- Hidden element for width measurement -->
+    
+    <div class="input-container">
+        <label for="topicInput">Input a new topic into the feed: </label>
+        <input type="text" id="topicInput" placeholder="Enter topic" />
+        <button onclick="updateScrollText()">Submit</button>
+    </div>
 
     <script>
         let textQueue = [];
         let fetchInProgress = false;
-        let lastSentenceEnd = 0;
         const scrollSpeed = 300; // Pixels per second
         const scrollContainer = document.getElementById("scroll-container");
-        const textMeasurer = document.getElementById("text-measurer");
 
         function processQueue() {
+            
             if (textQueue.length > 0) {
-                let nextSentence = textQueue.shift();
-
-                // Measure width in hidden element
-                textMeasurer.textContent = nextSentence;
-                let sentenceWidth = textMeasurer.offsetWidth;
-
-                let sentenceSpan = document.createElement("span");
-                sentenceSpan.textContent = nextSentence;
-                sentenceSpan.classList.add("scrolling-sentence");
-                scrollContainer.appendChild(sentenceSpan);
-
-                let delay = Math.max(lastSentenceEnd - performance.now(), 0);
-                let duration = ((window.innerWidth + sentenceWidth) / scrollSpeed) * 800;
-                
-                lastSentenceEnd = performance.now() + delay + duration;
-
-                // Initial position
-                sentenceSpan.style.left = "100%";
-                sentenceSpan.style.transition = `transform ${duration}ms linear`;
-
-                // Start animation
-                setTimeout(() => {
-                    sentenceSpan.style.transform = `translateX(-${window.innerWidth + sentenceWidth}px)`;
-                }, delay);
-
-                // Remove sentence from DOM after it fully scrolls off
-                setTimeout(() => {
-                    sentenceSpan.remove();
-                    processQueue(); // ✅ Start the next sentence only after this one leaves
-                }, delay + duration);
+                let firstSentence = textQueue.shift();
+                injectSentence(firstSentence, window.innerWidth);
             } else {
-                // If queue is empty, check again after 1 second
                 setTimeout(processQueue, 1000);
             }
 
-            // ✅ Fetch more text only when necessary
-            if (textQueue.length < 3 && !fetchInProgress) {
+            
+        }
+
+        function injectSentence(text, startX) {
+            let sentenceSpan = document.createElement("span");
+            sentenceSpan.textContent = text;
+            sentenceSpan.classList.add("scrolling-sentence");
+            scrollContainer.appendChild(sentenceSpan);
+
+            let sentenceWidth = sentenceSpan.offsetWidth;
+            let fullTravelDistance = window.innerWidth + sentenceWidth;
+            let duration = (fullTravelDistance / scrollSpeed) * 1000;
+
+            sentenceSpan.style.left = `${startX}px`;
+            sentenceSpan.style.transition = `transform ${duration}ms linear`;
+
+            setTimeout(() => {
+                sentenceSpan.style.transform = `translateX(-${fullTravelDistance}px)`;
+            }, 0);
+
+            // Inject next sentence when this one reaches the right edge
+            function checkPosition() {
+                let rect = sentenceSpan.getBoundingClientRect();
+                if (rect.right <= window.innerWidth) {
+                    if (textQueue.length > 0) {
+                        let nextSentence = textQueue.shift();
+                        injectSentence(nextSentence, rect.right);
+                    }
+                    return;
+                }
+                requestAnimationFrame(checkPosition);
+            }
+            requestAnimationFrame(checkPosition);
+
+            // Remove after full scroll
+            setTimeout(() => sentenceSpan.remove(), duration);
+            if (textQueue.length < 2 && !fetchInProgress) {
                 fetchMoreText();
-            }
+            } length
         }
 
+        function updateScrollText() {
+            const topic = document.getElementById("topicInput").value.trim();
 
-
-        function fetchMoreText() {
-            if (!fetchInProgress) {
-                fetchInProgress = true;
-                fetch('/api/get-text')
-                    .then(response => response.json())
-                    .then(data => {
-                        textQueue.push(...data.output.match(/[^.!?]+[.!?]/g));
-                        fetchInProgress = false;
-                    })
-                    .catch(error => {
-                        console.error("Error fetching text:", error);
-                        fetchInProgress = false;
-                    });
+            if (topic === "") {
+                alert("Please enter a topic before submitting.");
+                return;
             }
+
+            fetch(`/api/get-text?topic=${encodeURIComponent(topic)}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.output) {
+                        displayScrollingText(data.output);
+                    } else {
+                        console.error("Error from server:", data.error);
+                    }
+                })
+                .catch(error => console.error("Request failed:", error));
         }
 
+        // Fetch more sentences when needed
+        function fetchMoreText(retryCount = 0) {
+            if (fetchInProgress) return;
+
+            fetchInProgress = true;
+            fetch('/api/get-text')
+                .then(response => {
+                    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+                    return response.json();
+                })
+                .then(data => {
+                    let sentences = data.output.match(/[^.!?]+[.!?]/g) || [];
+                    textQueue.push(...sentences);
+                    fetchInProgress = false;
+                })
+                .catch(error => {
+                    console.error("Error fetching text:", error);
+                    fetchInProgress = false;
+
+                    // Retry with exponential backoff
+                    if (retryCount < 5) {
+                        let delay = Math.pow(2, retryCount) * 1000; // 1s, 2s, 4s, 8s, 16s
+                        console.log(`Retrying in ${delay / 1000} seconds...`);
+                        setTimeout(() => fetchMoreText(retryCount + 1), delay);
+                    } else {
+                        console.error("Max retries reached. Giving up on fetching more text.");
+                    }
+                });
+        }
+
+        
+        // Start processing
         fetchMoreText();
         processQueue();
+
     </script>
 </body>
 </html>
