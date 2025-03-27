@@ -68,6 +68,7 @@ def get_text():
         print("Error:", str(e))
         return jsonify({"error": str(e)}), 500
     
-
+if __name__ == '__main__':
+    app.run()
 # if __name__ == '__main__':
 #     app.run(host='0.0.0.0', debug=True, port=8000)
