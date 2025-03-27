@@ -27,12 +27,9 @@ def get_text():
 
             # Case 3: User provides a new topic, combining it with the last response
             if last_response:
-                print(f"Last response exists: {last_response}")  # Log last response
-
+                
                 sentences = re.split(r'(?<=[.!?]) +', last_response.strip())
                 last_sentence = sentences[-1] if sentences else ""
-
-                print(f"Extracted last sentence: {last_sentence}")  # Log last sentence
 
                 prompt = (f"Give me 3 sentences that flow out of \"{last_sentence}\" and transition into this topic: \"{user_topic}\"")
             else:
@@ -40,7 +37,6 @@ def get_text():
                 prompt = f"Generate an advanced insight about \"{user_topic}\" in 3 sentences"
             
             messages.append({"role": "system", "content": prompt})
-            print(f"Final prompt: {prompt}")  # Log final prompt
 
         elif last_response:  
             # Case 2: Feed last response into itself
