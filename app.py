@@ -1,12 +1,15 @@
 from flask import Flask, jsonify, request, send_file
 import openai
 import re
+import os
 
 app = Flask(__name__)
 
 # Load API key
-with open("OpenAI_API_Key.txt", "r") as f:
-    openai.api_key = f.read().strip()
+# with open("OpenAI_API_Key.txt", "r") as f:
+#     openai.api_key = f.read().strip()
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 @app.route('/')
 def serve_frontend():
@@ -66,5 +69,5 @@ def get_text():
         return jsonify({"error": str(e)}), 500
     
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True, port=8000)
+# if __name__ == '__main__':
+#     app.run(host='0.0.0.0', debug=True, port=8000)
