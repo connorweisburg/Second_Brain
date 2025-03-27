@@ -1,8 +1,0 @@
-numpy
-faiss-cpu
-matplotlib
-openai
-datetime
-sentence_transformers
-flask
-gunicorn
