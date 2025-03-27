@@ -1,9 +1,10 @@
-from flask import Flask, jsonify, request, send_file
+from flask import Flask, jsonify, request, send_file, session
 import openai
 import re
 import os
 
 app = Flask(__name__)
+app.secret_key = os.urandom(24) 
 
 # Load API key
 # with open("OpenAI_API_Key.txt", "r") as f:
@@ -19,7 +20,8 @@ last_response = None  # Store only the last response
 
 @app.route('/api/get-text', methods=['GET'])
 def get_text():
-    global last_response
+    # Retrieve last_response from session (if exists)
+    last_response = session.get('last_response', None)
 
     try:
         user_topic = request.args.get('topic', '')  # Get user input if provided
@@ -30,7 +32,6 @@ def get_text():
 
             # Case 3: User provides a new topic, combining it with the last response
             if last_response:
-                
                 sentences = re.split(r'(?<=[.!?]) +', last_response.strip())
                 last_sentence = sentences[-1] if sentences else ""
 
@@ -60,7 +61,8 @@ def get_text():
         )
 
         bot_response = response.choices[0].message.content
-        last_response = bot_response  # Update stored response
+        # Store the response in session
+        session['last_response'] = bot_response
 
         return jsonify({"output": bot_response})
 
