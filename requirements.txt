@@ -5,3 +5,4 @@ openai
 datetime
 sentence_transformers
 flask
+gunicorn
